@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import BootAnimation from './components/Boot';
 import Background from './components/Background';
 import { readFlag } from './lib/storage';
@@ -18,6 +19,8 @@ export default function App() {
           <Background />
         </main>
       )}
+
+      <Analytics />
     </>
   );
 }
